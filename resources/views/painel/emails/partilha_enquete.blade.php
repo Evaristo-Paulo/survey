@@ -61,8 +61,9 @@
                                                     <td class="content-block"
                                                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                                         valign="top">
-                                                        Estamos a conduzir uma enquete importante e valorizaríamos muito
-                                                        a sua participação. Ela tem como título <span style="font-weight: bold">"{{ $enquete->nome }}"</span>
+                                                        Estamos a conduzir uma enquete importante e valorizamos muito
+                                                        a sua participação. Ela tem como título <span
+                                                            style="font-weight: bold">"{{ $enquete->nome }}"</span>
                                                 </tr>
                                                 <tr
                                                     style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
@@ -79,7 +80,9 @@
                                                     <td class="content-block"
                                                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                                         valign="top">
-                                                        Agradecemos antecipadamente pela sua atenção e participação. Se tiver alguma dúvida ou precisar de qualquer assistência, não hesite em entrar em contato conosco.
+                                                        Agradecemos antecipadamente pela sua atenção e participação, e
+                                                        tiver alguma dúvida, não
+                                                        hesite em entrar em contato conosco.
                                                 </tr>
                                                 <tr
                                                     style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
@@ -88,7 +91,8 @@
                                                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                                         valign="top">
                                                         <a href="{{ $enquete->url }}" class="btn-primary" itemprop="url"
-                                                            style="width: 200px !important; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #000; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; cursor: pointer; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #F8BE86; margin: 0;">Visualizar enquete</a>
+                                                            style="width: 200px !important; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #000; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; cursor: pointer; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #F8BE86; margin: 0;">Visualizar
+                                                            enquete</a>
                                                     </td>
                                                 </tr>
                                                 <tr

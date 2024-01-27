@@ -44,8 +44,8 @@ class Enquete extends Controller
             }
 
             $enquete = Questionario::visualizar_enquete($id);
-
-            $notificacao_votacao = Questionario::mostrar_notificacao();
+            $usuario_logado_id = Auth::user()->id;
+            $notificacao_votacao = Questionario::mostrar_notificacao($usuario_logado_id);
 
             return view('painel.enquetes.visualizacao', compact('pagina', 'enquete', 'modelos', 'uniqueid', 'notificacao_votacao'));
         } catch (Exception $error) {

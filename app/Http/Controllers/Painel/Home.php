@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Painel;
 use Carbon\Carbon;
 use App\Models\Mes;
 use App\Models\Modelo;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Enquete;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -38,8 +39,8 @@ class Home extends Controller
                 $enquete_encerrada++;
             }
         }
-
-        $notificacao_votacao = Enquete::mostrar_notificacao();
+        $usuario_logado_id = Auth::user()->id;
+        $notificacao_votacao = Enquete::mostrar_notificacao($usuario_logado_id);
 
         return view('painel.home', compact('pagina', 'notificacao_votacao', 'ano', 'uniqueid', 'modelos', 'total_votos', 'enquetes', 'enquete_activa', 'enquete_encerrada', 'estatistica_enquete_registadas'));
     }

@@ -53,19 +53,17 @@ class Enquete extends Model
         return $dados;
     }
 
-    public static function mostrar_notificacao()
+    public static function mostrar_notificacao($usuario_id)
     {
-        $id = Auth::user()->id;
-
         $votos = DB::table('alternativas')
             ->join('perguntas', function (JoinClause $join) {
                 $join->on('perguntas.id', '=', 'alternativas.pergunta_id')
                     ->where('alternativas.notifica', '!=', 0);
             })
             ->join('enquetes', 'enquetes.id', '=', 'perguntas.enquete_id')
-            ->join('users', function (JoinClause $join) use ($id) {
+            ->join('users', function (JoinClause $join) use ($usuario_id) {
                 $join->on('users.id', '=', 'enquetes.user_id')
-                    ->where('users.id', '=', $id)
+                    ->where('users.id', '=', $usuario_id)
                     ->Where('enquetes.estado', '=', 1);
             })
             ->select('alternativas.*', 'perguntas.enquete_id')
@@ -75,9 +73,9 @@ class Enquete extends Model
 
 
         $enquetes_encerradas = DB::table('enquetes')
-            ->join('users', function (JoinClause $join) use ($id) {
+            ->join('users', function (JoinClause $join) use ($usuario_id) {
                 $join->on('users.id', '=', 'enquetes.user_id')
-                    ->where('users.id', '=', $id)
+                    ->where('users.id', '=', $usuario_id)
                     ->Where('enquetes.estado', '=', 0)
                     ->Where('enquetes.notifica', '!=', 0);
             })
@@ -117,10 +115,10 @@ class Enquete extends Model
 
     public static function listar_enquete()
     {
-        $id = Auth::user()->id;
+        $usuario_id = Auth::user()->id;
         $TAM = 70;
 
-        $enquetes = DB::table('enquetes')->where('user_id', $id)->orderBy('id', 'desc')->get();
+        $enquetes = DB::table('enquetes')->where('user_id', $usuario_id)->orderBy('id', 'desc')->get();
         $perguntas = DB::table('perguntas')->get();
         $dados = array();
 

@@ -16,14 +16,18 @@ use Illuminate\Support\Facades\Validator;
 
 class Utilizador extends Controller
 {
-    public function perfil($id)
+    public function perfil($user_id)
     {
         try {
             $pagina = 'Utilizadores / Ficha';
-            $id = $id;
+            // VERIFICA SE O USER LOGADO PERTENCE ESTA ENQUETE
+            if ($user_id != Auth::user()->id) {
+                Alert::toast('Não conseguimos processar esta requisição...', 'error');
+                return redirect()->back();
+            }
 
-            $utilizador = User::find($id);
-            $notificacao_votacao = Enquete::mostrar_notificacao();
+            $utilizador = User::find($user_id);
+            $notificacao_votacao = Enquete::mostrar_notificacao($user_id);
 
             return view('painel.utilizadores.perfil', compact('utilizador', 'pagina', 'notificacao_votacao'));
         } catch (Exception $error) {
@@ -94,7 +98,7 @@ class Utilizador extends Controller
     public function actualizar_info_pessoal(Request $request)
     {
         try {
-            $id = $request->id;
+            $id = Auth::user()->id;
 
             $validator = Validator::make($request->all(), [
                 'name' => 'required|string|min:3',
@@ -128,9 +132,8 @@ class Utilizador extends Controller
     public function remover_conta(Request $request)
     {
         try {
-            $id = $request->id;
+            $id = Auth::user()->id;
             User::where('id', $id)->delete();
-
             return redirect()->to('sys/login');
         } catch (Exception $error) {
             Alert::toast('Não conseguimos processar esta requisição...', 'error');
