@@ -75,7 +75,7 @@ class Site extends Controller
                     'alternativas' => $alternativas_actualizadas,
                 ];
 
-                $notificacao_votacao = Enquete::mostrar_notificacao(1);
+                $notificacao_votacao = Enquete::mostrar_notificacao($user_id);
 
                 VotoRegistado::dispatch($notificacao_votacao, $user_id);
 
