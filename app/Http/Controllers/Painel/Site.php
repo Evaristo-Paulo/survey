@@ -49,7 +49,7 @@ class Site extends Controller
             $pergunta = Pergunta::find($pergunta_id);
             /* ADICIONA +1 VOTO NA ALTERNATIVA PERTECENTE A PERGUNTA */
 
-            $enquete = Enquete::where('id', $pergunta_id)->first();
+            $enquete = Enquete::where('id', $pergunta->enquete_id)->first();
             // VERIFICA SE A ENQUETE AINDA NÃO FOI ENCERRADA E SE PODE CONTABILIZAR O VOTO
 
             if ($enquete->estado == 1) {
@@ -83,7 +83,6 @@ class Site extends Controller
                     'tipo' => 'success',
                     'mensagem' => 'Voto contabilizado com sucesso',
                     'dados' => $dados,
-                    'teste' => $notificacao_votacao,
                 ], 200);
 
             } else {

@@ -3,7 +3,7 @@
         <form class="modal-content" method="POST" action="{{ url('sys/enquetes/partilha-por-email') }}">
             @csrf
             <div class="modal-header">
-                <h6 class="title" id="defaultModalLabel"><i class="fa fa-edit"></i> Envio de enquete</h6>
+                <h6 class="title" id="defaultModalLabel"><i class="fa fa-share-alt"></i> Envio de enquete</h6>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
