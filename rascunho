@@ -1,0 +1,7 @@
+Tipo de resposta (Escolha única, Múltipla escolha, Resposta aberta)
+Partilha de enquete por email ()
+Estado da enquete (estado deve mudar de acordo a data de expiração automáticamente)
+data de ínicio data de expiração
+
+Um enquete pode ter 1 ou mais perguntas
+Uma pergunta pode ter 1 ou mais opção
