@@ -139,7 +139,6 @@ class Site extends Controller
                     'tipo' => 'success',
                     'mensagem' => 'Voto contabilizado com sucesso',
                     'dados' => $dados,
-                    'teste' => $notificacao_votacao,
                 ], 200);
             } else {
                 return response()->json([

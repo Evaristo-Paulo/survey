@@ -23,7 +23,7 @@
                 <div class="col-xl-8 col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Dados estatísticos referente ao ano de 2023</h3>
+                            <h3 class="card-title">Dados estatísticos referente ao ano de {{ date('Y') }}</h3>
                             <div class="card-options">
                                 <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i
                                         class="fe fe-maximize"></i></a>
@@ -31,7 +31,7 @@
                         </div>
                         <div class="card-body">
                             <div class="d-sm-flex justify-content-between">
-                                <div class="font-12">Enquetes registadas entre Janeiro à Dezembro de 2023</div>
+                                <div class="font-12">Enquetes registadas entre Janeiro à Dezembro de {{ date('Y') }}</div>
                             </div>
                             <div id="main" style="height: 400px"></div>
                         </div>
@@ -41,7 +41,7 @@
                 <div class="col-xl-4 col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Dados estatísticos referente ao ano de 2023</h3>
+                            <h3 class="card-title">Dados estatísticos referente ao ano de {{ date('Y') }}</h3>
                             <div class="card-options">
                                 <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i
                                         class="fe fe-maximize"></i></a>
