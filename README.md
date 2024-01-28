@@ -1,12 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
+# About IASK
 
 ## Sistema de gerenciamento de enquetes
 
@@ -30,15 +22,23 @@ E-mail teste: admin@gmail.com
 
 Senha: admin
 
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/login_main.png"></a>
+
 
 ## Principais funcionalidades
 
-- Jobs: Para envio de enquete por e-mail.
-- Cron Job: Para agendamento de tarefas (mudar o estado das enquetes após atinguirem o prazo de validade)
-- Broadcast e Events: Actualização em tempo real no frontend.
-- Pusher: API para notificação em tempo real  
-- Etç
-  
+- Autenticação alternativa: Usando sua conta Gmail;
+- Jobs: Para envio de enquete por e-mail;
+- Cron Job: Para agendamento de tarefas (mudar o estado das enquetes após atinguirem o prazo de validade);
+- Broadcast e Events: Actualização em tempo real no frontend;
+- Pusher: API para notificação em tempo real;
+- E muito mais.
+
+Dashboard
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/dash.png"></a>
+
+Site/Página para a votação
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/votacao.png"></a>
 
 ## Tecnologias utilizadas
 
@@ -52,7 +52,7 @@ Este projecto foi desenvolvido utilizando o framework Laravel Versão 9
 
 ## Nota importante
 
-Entre em contacto comigo a partir do meu [linkdin](https://www.linkedin.com/in/evaristo-paulo), de forma a contribuir neste ou futuros projectos.
+Entre em contacto comigo a partir do meu [linkedin](https://www.linkedin.com/in/evaristo-paulo), de forma a contribuir neste ou futuros projectos.
 
 Deixe uma estrela para dar aquela motivação extra :D
 
