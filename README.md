@@ -27,7 +27,7 @@ Test email: admin@gmail.com
 
 Password: admin
 
-<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/ admin/assets/images/img_doc/login_main.png"></a>
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/login_main.png"></a>
 
 
 ## Main features
@@ -40,10 +40,10 @@ Password: admin
 - And much more.
 
 Dashboard
-<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/ admin/assets/images/img_doc/dash.png"></a>
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/dash.png"></a>
 
 Website/Page for voting
-<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/ admin/assets/images/img_doc/votacao.png"></a>
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/votacao.png"></a>
 
 ## Technologies used
 
