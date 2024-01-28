@@ -15,7 +15,7 @@ Step 2: php artisan serves (To start the project)
 
 Step 3 (optional): php artisan queue:work (To start email service)
 
-Step 4 (optional): php artisan queue:work (To start schedule task)
+Step 4 (optional): php artisan schedule:work (To start schedule task service)
 
 
 
