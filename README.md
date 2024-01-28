@@ -7,11 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About IASK
-
- IASK is a survey management system that aims to extract specific data from a particular group of people in the form of direct questions and answers. 
-
- O sistema foi desenvolvido usando alguns conceitos avançado do Laravel, nomedamente: Cron Shedules, Broadcasting event, Notification, etc.
 
 ## Sistema de gerenciamento de enquetes
 
