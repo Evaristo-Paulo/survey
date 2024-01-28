@@ -1,48 +1,53 @@
 # About IASK
 
-## Sistema de gerenciamento de enquetes
+## Survey management system
 
-[iAsk](https://iask-enquete.herokuapp.com) é uma plataforma online para gerenciamento de enquetes, que visa extrair dados específicos de um determinado grupo de pessoas, em forma de perguntas e respostas diretas.
-
-
-## Como rodar o projecto
-
-Após configurar o projecto localmente na sua máquina, execute os seguintes comandos:
-
-Passo 1: php artisan migrate:fresh --seed (Para criar as tabelas da base de dados e gerar o usuário de teste)
-
-Passo 2: php artisan serve (Para subir o projecto)
+IASK is an online platform for managing polls, which aims to extract specific data from a certain group of people, in the form of direct questions and answers.
 
 
-## Acesso rápido e credenciais
+## How to run this project
 
-Clica [aqui](http://127.0.0.1:8000/sys/login) para aceder a roda de login.
+After configuring the project locally on your machine, run the following commands:
 
-E-mail teste: admin@gmail.com
+Step 1: php artisan migrate:fresh --seed (To create the database tables and generate the test user)
 
-Senha: admin
+Step 2: php artisan serves (To start the project)
 
-<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/login_main.png"></a>
+Step 3 (optional): php artisan queue:work (To start email service)
+
+Step 4 (optional): php artisan queue:work (To start schedule task)
 
 
-## Principais funcionalidades
 
-- Autenticação alternativa: Usando sua conta Gmail;
-- Jobs: Para envio de enquete por e-mail;
-- Cron Job: Para agendamento de tarefas (mudar o estado das enquetes após atinguirem o prazo de validade);
-- Broadcast e Events: Actualização em tempo real no frontend;
-- Pusher: API para notificação em tempo real;
-- E muito mais.
+## Quick access and credentials
+
+Click [here](http://127.0.0.1:8000/sys/login) to access the login page.
+
+Test email: admin@gmail.com
+
+Password: admin
+
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/ admin/assets/images/img_doc/login_main.png"></a>
+
+
+## Main features
+
+- Alternative authentication: Using your Gmail account;
+- Jobs: To send a survey by email;
+- Cron Job: For scheduling tasks (changing the status of survey after they reach their expiration date);
+- Broadcast and Events: Real-time update on the frontend;
+- Pusher: API for real-time notification;
+- And much more.
 
 Dashboard
-<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/dash.png"></a>
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/ admin/assets/images/img_doc/dash.png"></a>
 
-Site/Página para a votação
-<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/admin/assets/images/img_doc/votacao.png"></a>
+Website/Page for voting
+<a href="http://127.0.0.1:8000/sys/login" target="_blank"><img src="https://github.com/Evaristo-Paulo/survey/blob/main/public/ admin/assets/images/img_doc/votacao.png"></a>
 
-## Tecnologias utilizadas
+## Technologies used
 
-Este projecto foi desenvolvido utilizando o framework Laravel Versão 9
+This project was developed using the Laravel Version 9 framework
 
 - PHP/Laravel
 - HTML
@@ -50,9 +55,8 @@ Este projecto foi desenvolvido utilizando o framework Laravel Versão 9
 - MySql
 
 
-## Nota importante
+## Important note
 
-Entre em contacto comigo a partir do meu [linkedin](https://www.linkedin.com/in/evaristo-paulo), de forma a contribuir neste ou futuros projectos.
+Get in touch with me from my [linkedin](https://www.linkedin.com/in/evaristo-paulo), in order to contribute to this or future projects.
 
-Deixe uma estrela para dar aquela motivação extra :D
-
+Leave a star to give that extra motivation :D
